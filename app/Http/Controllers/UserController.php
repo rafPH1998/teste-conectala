@@ -49,6 +49,21 @@ class UserController extends Controller
         }
     }
 
+    public function show(int $id): JsonResponse
+    {
+        try {
+            $user = User::find($id);
+
+            if (! $user) {
+                abort(404);
+            }
+            return response()->json(['user' => $user]);
+
+        } catch (\Exception $e) {
+            return response()->json(['error' => 'Usuário não encontrado.'], 500);
+        }
+    }
+
     public function update(Request $request, $id): JsonResponse
     {
         try {

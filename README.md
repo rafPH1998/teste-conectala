@@ -73,8 +73,8 @@ php artisan key:generate
 
 # Estruturando uma API Restful utilizando Laravel para criação de usuários
 
-- **GET /api/usuarios** - Lista todos os usuários da base de dados.
-- **GET /api/usuario/{id}** - Obtém informações sobre um usuário específico pelo seu ID.
-- **POST /api/usuario** - Cadastra um novo usuário.
-- **PUT /api/usuario/{id}** - Atualiza as informações de um usuário específico pelo seu ID
-- **DELETE /api/usuario/{id}** - Deleta um usuário existente pelo seu ID
+- **GET /api/users** - Lista todos os usuários da base de dados.
+- **GET /api/users/{id}** - Obtém informações sobre um usuário específico pelo seu ID.
+- **POST /api/users** - Cadastra um novo usuário.
+- **PUT /api/users/{id}** - Atualiza as informações de um usuário específico pelo seu ID
+- **DELETE /api/users/{id}** - Deleta um usuário existente pelo seu ID
