@@ -56,4 +56,10 @@ class User extends Authenticatable
             'password' => bcrypt($data['password'])
         ]);
     }
+
+    public function deleteUser(int $idUser)
+    {
+        return $this->find($idUser);
+    }    
+
 }
